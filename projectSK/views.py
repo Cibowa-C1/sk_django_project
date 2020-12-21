@@ -12,5 +12,5 @@ def about(request):
 def contact(request):
     return render(request,'contact.html')
 
-class ProfileView(TemplateView,LoginRequiredMixin):
+class ProfileView(LoginRequiredMixin,TemplateView):
     template_name ='accounts/profile.html'

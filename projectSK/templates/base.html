@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Visual Aesthetics{% endblock %}</title>
+    <meta name="description" content="VisualAe">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+{% include 'menu_bar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
